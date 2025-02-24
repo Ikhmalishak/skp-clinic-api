@@ -15,9 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('phone_number')->nullable(); // ✅ Add phone_number
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->enum('role', ['admin', 'doctor'])->default('doctor'); // Employees removed
+            $table->string('company_id')->nullable();
+            $table->boolean('is_first_login')->default(true); // ✅ Set to true for new doctors
             $table->rememberToken();
             $table->timestamps();
         });

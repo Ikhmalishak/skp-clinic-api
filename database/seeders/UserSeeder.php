@@ -19,6 +19,8 @@ class UserSeeder extends Seeder
             'email' => 'admin@example.com',
             'password' => Hash::make('password123'), // Change for security
             'role' => 'admin',
+            'company_id' => '1',
+            'is_first_login' => false
         ]);
 
         // ✅ Create Doctor Account
@@ -27,6 +29,8 @@ class UserSeeder extends Seeder
             'email' => 'doctor@example.com',
             'password' => Hash::make('password123'), // Change for security
             'role' => 'doctor',
+            'company_id' => '1',
+            'is_first_login' => false
         ]);
     }
 }

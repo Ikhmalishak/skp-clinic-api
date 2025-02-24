@@ -9,7 +9,7 @@ class Queue extends Model
 {
     use HasFactory;
 
-    protected $table = 'queue';
+    protected $table = 'queues';
 
     protected $fillable = [
         'employee_id',

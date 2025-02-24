@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,  // ✅ Seeds Admin & Doctor
             EmployeeSeeder::class,  // ✅ Seeds Employees
+            QueueSeeder::class,
         ]);
     }
 

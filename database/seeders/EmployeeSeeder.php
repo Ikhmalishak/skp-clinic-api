@@ -15,7 +15,7 @@ class EmployeeSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 200; $i++) {
             Employee::create([
                 'employee_id' => 'EMP' . str_pad($i, 3, '0', STR_PAD_LEFT), // EMP001, EMP002...
                 'name' => $faker->name,
